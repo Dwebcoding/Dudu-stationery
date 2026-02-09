@@ -107,18 +107,30 @@ function createFooter(currentPage) {
       <span class="footer-title text-eco text-lg font-bold mb-2">Seguici</span>
       <div class="flex gap-4 mt-2">
         <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="height:22px;width:22px;">
-            <path fill="#1877F2" d="M279.14 288l14.22-92.66h-88.91V127.7c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0c-73.22 0-121.36 44.38-121.36 124.72v70.62H22.89V288h81.11v224h100.2V288z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="height:22px;width:22px;">
+            <rect width="48" height="48" rx="12" fill="#1877F2"/>
+            <path d="M32 24h-4v12h-6V24h-3v-5h3v-3c0-2.2 1.3-5 5-5h4v5h-2c-.6 0-1 .4-1 1v2h3l-1 5z" fill="#fff"/>
           </svg>
         </a>
         <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:22px;width:22px;">
-            <path fill="#E1306C" d="M224.1 141c-63.6 0-115.1 51.5-115.1 115.1s51.5 115.1 115.1 115.1 115.1-51.5 115.1-115.1-51.5-115.1-115.1-115.1zm0 190.7c-41.8 0-75.6-33.8-75.6-75.6s33.8-75.6 75.6-75.6 75.6 33.8 75.6 75.6-33.8 75.6-75.6 75.6zm146.4-194.3c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27s12.1-27 27-27 27 12.1 27 27zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.1C397.7 7.7 366.3-.5 331 1.2c-36.3 1.7-72.6 1.7-108.9 0C81.7-.5 50.3 7.7 24.9 33.1-1.4 58.5-9.6 89.9-11.3 125.2c-1.7 36.3-1.7 72.6 0 108.9 1.7 35.3 9.9 66.7 36.2 92.1 25.4 25.4 56.8 33.6 92.1 36.2 36.3 1.7 72.6 1.7 108.9 0 35.3-1.7 66.7-9.9 92.1-36.2 25.4-25.4 33.6-56.8 36.2-92.1 1.7-36.3 1.7-72.6 0-108.9zm-48.6 218c-7.8 19.6-22.9 34.7-42.5 42.5-29.5 11.7-59.2 11.7-88.7 0-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.5-11.7-59.2 0-88.7 7.8-19.6 22.9-34.7 42.5-42.5 29.5-11.7 59.2-11.7 88.7 0 19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.5 11.7 59.2 0 88.7z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="height:22px;width:22px;">
+            <defs>
+              <linearGradient id="insta-gradient" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#f9c784"/>
+                <stop offset="50%" stop-color="#dd2a7b"/>
+                <stop offset="100%" stop-color="#6c63ff"/>
+              </linearGradient>
+            </defs>
+            <rect width="48" height="48" rx="12" fill="url(#insta-gradient)"/>
+            <circle cx="24" cy="24" r="10" fill="#fff"/>
+            <circle cx="34" cy="14" r="3" fill="#dd2a7b"/>
           </svg>
         </a>
         <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:22px;width:22px;">
-            <path fill="#25D366" d="M380.9 97.1C339-2.7 256.3-16.7 176.7 24.6c-79.6 41.3-93.6 124.9-54.3 204.5l-7.1 31.2c-2.2 9.7 7.1 18.1 16.8 15.9l31.2-7.1c79.6 39.3 163.2 25.3 204.5-54.3 41.3-79.6 27.3-162.3-54.3-204.5zm-124.9 222.7c-41.8 0-75.6-33.8-75.6-75.6s33.8-75.6 75.6-75.6 75.6 33.8 75.6 75.6-33.8 75.6-75.6 75.6zm146.4-194.3c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27s12.1-27 27-27 27 12.1 27 27z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="height:22px;width:22px;">
+            <rect width="48" height="48" rx="12" fill="#25D366"/>
+            <path d="M34 18c-1.1-2.1-3.2-3.5-5.6-3.5-2.4 0-4.5 1.4-5.6 3.5-1.1 2.1-1.1 4.7 0 6.8l1.2 2.2c.2.4.7.5 1.1.3l2.2-1.2c2.1 1.1 4.7 1.1 6.8 0 2.1-1.1 3.5-3.2 3.5-5.6 0-2.4-1.4-4.5-3.5-5.6z" fill="#fff"/>
+            <circle cx="24" cy="24" r="6" fill="#fff" opacity="0.2"/>
           </svg>
         </a>
       </div>
