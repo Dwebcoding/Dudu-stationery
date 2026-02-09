@@ -31,8 +31,9 @@ function createFooter(currentPage) {
       </span>
       <span class="text-xs flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#25D366" opacity="0.9"/>
-        </svg> Telefono
+          <circle cx="12" cy="12" r="10" fill="#25D366"/>
+          <path d="M16.5 13.5c-.3-.2-1.8-.9-2-.9-.2-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3-.1-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4-.1-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5 0 1.5 1.1 2.9 1.2 3.1.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z" fill="#fff"/>
+        </svg> Whatsapp
       </span>
       <span class="text-xs flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
@@ -46,29 +47,84 @@ function createFooter(currentPage) {
         </svg> Creatività
       </span>
     </div>
-    <!-- Navigazione -->
+    <!-- Navigazione cartoon -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Navigazione</span>
-      <a href="../index.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2L2 8h2v6h4v-4h2v4h4V8h2L8 2z" fill="#3B7C59"/></svg> Home</a>
-      <a href="chi-siamo.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="7" stroke="#E07A5F" stroke-width="2"/><path d="M8 10c2 0 3-1.5 3-3S10 4 8 4 5 5.5 5 7s1 3 3 3z" fill="#E07A5F"/></svg> Chi Siamo</a>
-      <a href="novita.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="12" height="8" rx="2" fill="#6C63FF"/></svg> Novità</a>
-      <a href="servizi.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2v12M2 8h12" stroke="#F9C784" stroke-width="2"/></svg> Servizi</a>
-      <a href="contatti.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2h12v12H2V2z" stroke="#E07A5F" stroke-width="2"/></svg> Contatti</a>
+      <a href="../index.html" class="hover:text-accent flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" fill="#F9C784"/>
+        </svg> Home
+      </a>
+      <a href="chi-siamo.html" class="hover:text-accent flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <circle cx="12" cy="12" r="10" fill="#E07A5F"/>
+          <circle cx="12" cy="12" r="6" fill="#fff"/>
+        </svg> Chi Siamo
+      </a>
+      <a href="novita.html" class="hover:text-accent flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <rect x="4" y="8" width="16" height="8" rx="2" fill="#6C63FF"/>
+          <rect x="4" y="4" width="16" height="4" rx="2" fill="#F9C784"/>
+        </svg> Novità
+      </a>
+      <a href="servizi.html" class="hover:text-accent flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <rect x="6" y="6" width="12" height="12" rx="3" fill="#3B7C59"/>
+          <path d="M12 10v4" stroke="#fff" stroke-width="2"/>
+        </svg> Servizi
+      </a>
+      <a href="contatti.html" class="hover:text-accent flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <rect x="4" y="4" width="16" height="16" rx="4" fill="#E07A5F"/>
+          <circle cx="12" cy="12" r="6" fill="#fff"/>
+        </svg> Contatti
+      </a>
     </div>
-    <!-- Legali -->
+    <!-- Legali cartoon -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Legali</span>
-      <a href="../termini-servizio.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="12" height="12" rx="2" fill="#3B7C59"/></svg> Termini e condizioni</a>
-      <a href="../privacy-policy.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="7" stroke="#E07A5F" stroke-width="2"/></svg> Privacy Policy</a>
-      <a href="../cookie-policy.html" class="hover:text-accent flex items-center"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="12" height="12" rx="2" fill="#F9C784"/></svg> Cookie Policy</a>
+      <a href="../termini-servizio.html" class="hover:text-accent flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <rect x="4" y="4" width="16" height="16" rx="4" fill="#3B7C59"/>
+          <rect x="8" y="8" width="8" height="8" rx="2" fill="#fff"/>
+        </svg> Termini e condizioni
+      </a>
+      <a href="../privacy-policy.html" class="hover:text-accent flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <circle cx="12" cy="12" r="10" fill="#E07A5F"/>
+          <circle cx="12" cy="12" r="6" fill="#fff"/>
+        </svg> Privacy Policy
+      </a>
+      <a href="../cookie-policy.html" class="hover:text-accent flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <rect x="4" y="4" width="16" height="16" rx="4" fill="#F9C784"/>
+          <circle cx="12" cy="12" r="6" fill="#fff"/>
+        </svg> Cookie Policy
+      </a>
     </div>
-    <!-- Social -->
+    <!-- Social cartoon -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Seguici</span>
       <div class="flex gap-4 mt-2">
-        <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 10.073c0-5.523-4.477-10-10-10S0 4.55 0 10.073c0 4.99 3.663 9.104 8.438 9.854v-6.96H5.898v-2.894h2.54V7.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.463h-1.26c-1.243 0-1.632.772-1.632 1.563v1.88h2.773l-.443 2.894h-2.33v6.96C16.337 19.177 20 15.063 20 10.073z" fill="#1877F2"/></svg></a>
-        <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9" stroke="#DD2A7B" stroke-width="2"/><circle cx="10" cy="10" r="5" stroke="#DD2A7B" stroke-width="2"/><circle cx="15" cy="5" r="1" fill="#DD2A7B"/></svg></a>
-        <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9" stroke="#25D366" stroke-width="2"/><path d="M7 10c0 1.657 1.343 3 3 3s3-1.343 3-3-1.343-3-3-3-3 1.343-3 3z" fill="#25D366"/></svg></a>
+        <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;">
+            <circle cx="12" cy="12" r="10" fill="#1877F2"/>
+            <rect x="10" y="7" width="4" height="10" rx="2" fill="#fff"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;">
+            <circle cx="12" cy="12" r="10" fill="#DD2A7B"/>
+            <circle cx="12" cy="12" r="6" fill="#fff"/>
+            <circle cx="17" cy="7" r="2" fill="#DD2A7B"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;">
+            <circle cx="12" cy="12" r="10" fill="#25D366"/>
+            <path d="M16.5 13.5c-.3-.2-1.8-.9-2-.9-.2-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3-.1-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4-.1-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5 0 1.5 1.1 2.9 1.2 3.1.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z" fill="#fff"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
