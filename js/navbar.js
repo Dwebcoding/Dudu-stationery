@@ -24,9 +24,9 @@ function createNavbar(currentPage) {
             <li class="nav-item ${currentPage === 'contatti' ? 'active' : ''}"><a href="${currentPage === 'index' ? 'html/contatti.html' : 'contatti.html'}" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Contatti</a></li>
         </ul>
         <div class="navbar-social flex gap-4">
-            <a href="https://www.facebook.com/" target="_blank" class="text-eco hover:text-accent"><i class="fab fa-facebook-f fa-lg"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" class="text-eco hover:text-accent"><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="https://www.pinterest.com/" target="_blank" class="text-eco hover:text-accent"><i class="fab fa-pinterest-p fa-lg"></i></a>
+            <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent"><i class="fab fa-whatsapp fa-lg"></i></a>
         </div>
     </div>
 </nav>
