@@ -7,19 +7,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
 :root {
     --primary: #3B7C59;           /* Verde salvia */
-    --secondary: #FFF6E5;         /* Crema chiaro */
+    --secondary: #F6F3E9;         /* Beige chiaro */
     --accent: #E07A5F;            /* Corallo caldo */
     --dark: #2C2C2C;              /* Grigio scuro */
-    --light: #FFFBF7;             /* Bianco caldo */
+    --light: #FFFFFF;             /* Bianco puro */
     --light-gray: #F2EDE6;
     --border: #E8E0D8;
     --success: #6AA96A;
     --warning: #E0A878;
     --error: #C66B6B;
-    
-    --font-main: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    --eco: #A3C9A8;              /* Verde chiaro */
+    --eco-accent: #F9C784;       /* Giallo caldo */
+    --font-main: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     --font-accent: 'Playfair Display', Georgia, serif;
-    
     --transition: all 0.34s cubic-bezier(0.22, 1, 0.36, 1);
     --shadow-small: 0 4px 14px rgba(35, 34, 33, 0.06);
     --shadow-medium: 0 8px 28px rgba(35, 34, 33, 0.10);
@@ -39,10 +39,8 @@ html {
 body {
     font-family: var(--font-main);
     color: var(--dark);
-    background-color: var(--light);
-    /* Subtle paper texture + warm tint */
-    background-image: radial-gradient(circle at 10% 20%, rgba(0,0,0,0.012) 0px, transparent 2px), repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0 3px, transparent 3px 8px);
-    background-repeat: repeat;
+    background-color: var(--secondary);
+    background-image: none;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -59,11 +57,13 @@ h1 {
     font-size: 3rem;
     font-family: var(--font-accent);
     color: var(--primary);
+    letter-spacing: 0.5px;
 }
 
 h2 {
     font-size: 2.2rem;
-    position: relative;
+    font-family: var(--font-main);
+    color: var(--primary);
     padding-bottom: 1rem;
 }
 
@@ -74,7 +74,7 @@ h2::after {
     left: 0;
     width: 80px;
     height: 6px;
-    background: linear-gradient(90deg, rgba(59,124,89,0.95), rgba(224,122,95,0.95));
+    background: linear-gradient(90deg, var(--primary), var(--accent));
     border-radius: 6px;
     box-shadow: 0 4px 12px rgba(224,122,95,0.06);
 }
@@ -1229,4 +1229,148 @@ footer {
         flex: 1;
         min-width: 120px;
     }
+}
+
+/* ============= GLASSMORPHISM CARD ============= */
+.glass-card {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1.25rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.glass-card:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.18);
+    transform: translateY(-4px) scale(1.025);
+}
+
+/* Migliora la trasparenza delle icone nelle card */
+.card .custom-icon {
+    background: rgba(59,124,89,0.12);
+    border-radius: 50%;
+    padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(59,124,89,0.08);
+}
+
+/* ============= LISTA ANIMATA ============= */
+.animated-list-item {
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(59,124,89,0.06);
+  transition: background 0.25s, box-shadow 0.25s, transform 0.18s;
+}
+.animated-list-item:hover {
+  box-shadow: 0 6px 24px rgba(59,124,89,0.13);
+  transform: translateY(-2px) scale(1.02);
+}
+.animated-list-item .icon {
+  transition: transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.22s;
+  box-shadow: 0 2px 8px rgba(59,124,89,0.10);
+}
+.animated-list-item:hover .icon {
+  box-shadow: 0 4px 16px rgba(59,124,89,0.18);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-animated-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, #3B7C59 0%, #E07A5F 50%, #6C63FF 100%);
+  background-size: 200% 200%;
+  opacity: 0.18;
+  animation: gradientMove 8s ease-in-out infinite;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.card.glass-card {
+  position: relative;
+  overflow: hidden;
+}
+.card.glass-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(120deg, #3B7C59 0%, #E07A5F 50%, #6C63FF 100%);
+  background-size: 200% 200%;
+  opacity: 0.10;
+  animation: gradientMove 10s ease-in-out infinite;
+}
+.card.glass-card > * { position: relative; z-index: 1; }
+
+@keyframes borderGradient {
+  0% { border-image-source: linear-gradient(120deg, #3B7C59, #E07A5F, #6C63FF); }
+  50% { border-image-source: linear-gradient(300deg, #6C63FF, #E07A5F, #3B7C59); }
+  100% { border-image-source: linear-gradient(120deg, #3B7C59, #E07A5F, #6C63FF); }
+}
+
+.animated-border {
+  border: 4px solid;
+  border-image: linear-gradient(120deg, #3B7C59, #E07A5F, #6C63FF) 1;
+  animation: borderGradient 6s linear infinite;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0 2px rgba(60,60,60,0.04);
+}
+
+.decorative-border {
+  border: 3px dashed #6C63FF;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 12px 2px rgba(108,99,255,0.08);
+  position: relative;
+}
+.decorative-border::after {
+  content: '';
+  position: absolute;
+  inset: 0.5rem;
+  border: 2px dotted #E07A5F;
+  border-radius: 1.2rem;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* === ELEMENTI DECORATIVI FLUTTUANTI === */
+.floating-deco {
+  position: fixed;
+  z-index: 2;
+  opacity: 0.32;
+  pointer-events: none;
+  animation: floatY 8s ease-in-out infinite alternate;
+  filter: drop-shadow(0 2px 8px rgba(60,60,60,0.10));
+  transition: opacity 0.3s;
+}
+.floating-deco.deco1 { left: 4vw; top: 8vh; font-size: 4.2rem; animation-delay: 0s; }
+.floating-deco.deco2 { right: 6vw; top: 18vh; font-size: 3.5rem; animation-delay: 2s; }
+.floating-deco.deco3 { left: 10vw; bottom: 10vh; font-size: 3.8rem; animation-delay: 1.5s; }
+.floating-deco.deco4 { right: 12vw; bottom: 6vh; font-size: 3.2rem; animation-delay: 3s; }
+.floating-deco.deco5 { left: 50vw; top: 4vh; font-size: 3rem; animation-delay: 4s; }
+
+@media (max-width: 700px) {
+  .floating-deco { opacity: 0.13; font-size: 2.2rem !important; }
+}
+
+/* === LINEE CURVE ANIMATE SVG === */
+.animated-curve {
+  position: fixed;
+  z-index: 1;
+  left: 0; right: 0;
+  width: 100vw;
+  pointer-events: none;
+  opacity: 0.22;
+  mix-blend-mode: multiply;
+  animation: curveMove 12s linear infinite alternate;
+}
+.animated-curve.curve1 { top: 10vh; height: 100px; animation-delay: 0s; }
+.animated-curve.curve2 { bottom: 12vh; height: 90px; animation-delay: 3s; }
+
+@keyframes curveMove {
+  0% { filter: blur(0px); transform: translateX(0); }
+  100% { filter: blur(1.5px); transform: translateX(40px); }
 }
