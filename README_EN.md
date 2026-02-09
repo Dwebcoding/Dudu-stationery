@@ -241,7 +241,7 @@ Modify CSS variables in `style.css`:
 
 ### Copyright
 - **Content**: © 2026 Cartoleria Dudù
-- **Website**: © 2026 DWeb-code
+
 - **Code**: Open source (MIT License)
 
 ### Compliance
@@ -259,4 +259,3 @@ Modify CSS variables in `style.css`:
 ## License
 This project is released under **MIT** license. See the `LICENSE` file for details.
 
----
