@@ -6,11 +6,45 @@ function createFooter(currentPage) {
     <!-- Contatti cartoon -->
     <div class="footer-section flex flex-col gap-3 min-w-[180px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Contatti</span>
-      <span class="text-xs flex items-center"><img src="../icons/shop.svg" alt="Negozio" style="height: 22px; width: 22px; margin-right: 8px;" /> Negozio</span>
-      <span class="text-xs flex items-center"><img src="../icons/calendar.svg" alt="Orari" style="height: 22px; width: 22px; margin-right: 8px;" /> Orari</span>
-      <span class="text-xs flex items-center"><img src="../icons/email.svg" alt="Email" style="height: 22px; width: 22px; margin-right: 8px;" /> Email</span>
-      <span class="text-xs flex items-center"><img src="../icons/phone.svg" alt="Telefono" style="height: 22px; width: 22px; margin-right: 8px;" /> Telefono</span>
-      <span class="text-xs flex items-center"><img src="../icons/pencils.svg" alt="Creatività" style="height: 22px; width: 22px; margin-right: 8px;" /> Creatività</span>
+      <span class="text-xs flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <path d="M7 4V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h4l-1 16H4L3 4h4z" fill="#F9C784" opacity="0.9"/>
+          <path d="M9 8v2M15 8v2" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"/>
+          <rect x="8" y="2" width="8" height="2" fill="#6C63FF"/>
+        </svg> Negozio
+      </span>
+      <span class="text-xs flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <rect x="4" y="6" width="16" height="14" rx="2" fill="#E07A5F" opacity="0.8"/>
+          <rect x="4" y="4" width="16" height="4" rx="2" fill="#F9C784" opacity="0.9"/>
+          <rect x="7" y="2" width="2" height="4" rx="1" fill="#6C63FF"/>
+          <rect x="15" y="2" width="2" height="4" rx="1" fill="#6C63FF"/>
+          <path d="M8 10h2M8 13h2M8 16h2M12 10h2M12 13h2M16 10h2M16 13h2" stroke="#3B7C59" stroke-width="1"/>
+        </svg> Orari
+      </span>
+      <span class="text-xs flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <rect x="2" y="6" width="20" height="12" rx="2" fill="#6C63FF" opacity="0.8"/>
+          <path d="M2 8l10 6 10-6" stroke="#E07A5F" stroke-width="2" fill="none"/>
+          <path d="M2 6l10 6 10-6" fill="#F9C784"/>
+        </svg> Email
+      </span>
+      <span class="text-xs flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#25D366" opacity="0.9"/>
+        </svg> Telefono
+      </span>
+      <span class="text-xs flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
+          <path d="M6 2l12 12-2 2L4 4z" fill="#E07A5F" opacity="0.7"/>
+          <path d="M8 2l12 12-2 2L6 4z" fill="#F9C784" opacity="0.8"/>
+          <path d="M10 2l12 12-2 2L8 4z" fill="#6C63FF" opacity="0.9"/>
+          <circle cx="5" cy="3" r="1" fill="#3B7C59"/>
+          <circle cx="7" cy="3" r="1" fill="#3B7C59"/>
+          <circle cx="9" cy="3" r="1" fill="#3B7C59"/>
+          <path d="M16 16l4 4-1 1-4-4z" fill="#E07A5F" opacity="0.6"/>
+        </svg> Creatività
+      </span>
     </div>
     <!-- Navigazione -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
