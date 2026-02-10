@@ -45,13 +45,13 @@ function createFooter(currentPage) {
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Legali</span>
       <a href="${currentPage === 'index' ? 'html/termini-servizio.html' : '../termini-servizio.html'}" class="hover:text-accent flex items-center">
-        <img src="assets/images/legal pages/terms.png" alt="Termini di Servizio" width="22" height="22" style="margin-right:8px;" /> Termini di Servizio
+        <img src="assets/images/legal-pages/terms.png" alt="Termini di Servizio" width="22" height="22" style="margin-right:8px;" /> Termini di Servizio
       </a>
       <a href="${currentPage === 'index' ? 'html/privacy-policy.html' : '../privacy-policy.html'}" class="hover:text-accent flex items-center">
-        <img src="assets/images/legal pages/privacy.png" alt="Privacy Policy" width="22" height="22" style="margin-right:8px;" /> Privacy Policy
+        <img src="assets/images/legal-pages/privacy.png" alt="Privacy Policy" width="22" height="22" style="margin-right:8px;" /> Privacy Policy
       </a>
       <a href="${currentPage === 'index' ? 'html/cookie-policy.html' : '../cookie-policy.html'}" class="hover:text-accent flex items-center">
-        <img src="assets/images/legal pages/cookie.png" alt="Cookie Policy" width="22" height="22" style="margin-right:8px;" /> Cookie Policy
+        <img src="assets/images/legal-pages/cookie.png" alt="Cookie Policy" width="22" height="22" style="margin-right:8px;" /> Cookie Policy
       </a>
     </div>
     <!-- Social ufficiali -->
