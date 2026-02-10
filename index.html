@@ -196,8 +196,10 @@
 <script src="js/navbar.js"></script>
 <script src="js/footer.js"></script>
 <script>
-  insertNavbar('index');
-  insertFooter('index');
+  document.addEventListener('DOMContentLoaded', function() {
+    insertNavbar('index');
+    insertFooter('index');
+  });
 </script>
 </body>
 </html>
