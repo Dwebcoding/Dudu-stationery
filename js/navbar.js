@@ -4,7 +4,7 @@ function createNavbar(currentPage) {
 <nav class="navbar bg-white shadow-lg border-b border-gray-200">
     <div class="navbar-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
         <a href="${currentPage === 'index' ? 'index.html' : '../index.html'}" class="logo flex items-center space-x-2 text-xl font-bold text-eco hover:text-accent transition-colors">
-            <img src="${currentPage === 'index' ? '../assets/images/logo/logo dudu.png' : '../assets/images/logo/logo dudu.png'}" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
+            <img src="${currentPage === 'index' ? 'assets/images/logo/logo dudu.png' : '../assets/images/logo/logo dudu.png'}" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
             Dudù
         </a>
         <ul class="nav-menu flex gap-8 mx-auto">
@@ -16,13 +16,13 @@ function createNavbar(currentPage) {
         </ul>
         <div class="navbar-social flex gap-4">
             <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent">
-                <img src="${currentPage === 'index' ? '../assets/images/social/facebook.png' : '../assets/images/social/facebook.png'}" alt="Facebook" width="24" height="24" />
+                <img src="${currentPage === 'index' ? 'assets/images/social/facebook.png' : '../assets/images/social/facebook.png'}" alt="Facebook" width="24" height="24" />
             </a>
             <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent">
-                <img src="${currentPage === 'index' ? '../assets/images/social/instagram.png' : '../assets/images/social/instagram.png'}" alt="Instagram" width="24" height="24" />
+                <img src="${currentPage === 'index' ? 'assets/images/social/instagram.png' : '../assets/images/social/instagram.png'}" alt="Instagram" width="24" height="24" />
             </a>
             <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent">
-                <img src="${currentPage === 'index' ? '../assets/images/social/whatsapp.png' : '../assets/images/social/whatsapp.png'}" alt="Whatsapp" width="24" height="24" />
+                <img src="${currentPage === 'index' ? 'assets/images/social/whatsapp.png' : '../assets/images/social/whatsapp.png'}" alt="Whatsapp" width="24" height="24" />
             </a>
         </div>
     </div>
