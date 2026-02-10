@@ -16,13 +16,13 @@ function createNavbar(currentPage) {
         </ul>
         <div class="navbar-social flex gap-4">
             <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent">
-                <img src="${currentPage === 'index' ? 'assets/images/social/facebook.png' : '../assets/images/social/facebook.png'}" alt="Facebook" width="24" height="24" />
+                <img src="../assets/images/social/facebook.png" alt="Facebook" width="24" height="24" />
             </a>
             <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent">
-                <img src="${currentPage === 'index' ? 'assets/images/social/instagram.png' : '../assets/images/social/instagram.png'}" alt="Instagram" width="24" height="24" />
+                <img src="../assets/images/social/instagram.png" alt="Instagram" width="24" height="24" />
             </a>
             <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent">
-                <img src="${currentPage === 'index' ? 'assets/images/social/whatsapp.png' : '../assets/images/social/whatsapp.png'}" alt="Whatsapp" width="24" height="24" />
+                <img src="../assets/images/social/whatsapp.png" alt="Whatsapp" width="24" height="24" />
             </a>
         </div>
     </div>
