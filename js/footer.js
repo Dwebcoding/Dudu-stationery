@@ -1,5 +1,19 @@
 // Footer component
+
+function getAssetBasePath() {
+  // Calcola il path base per le immagini in base alla posizione della pagina
+  // Esempio: se la pagina è /html/chi-siamo.html => basePath = '../'
+  // se la pagina è /index.html => basePath = './'
+  var path = window.location.pathname;
+  var depth = path.split('/').filter(Boolean).length - 1; // -1 perché la prima è la root
+  // Se siamo nella root (index.html), nessun ../
+  if (depth <= 0) return './';
+  // Se siamo in una sottocartella, aggiungi tanti ../ quanti sono i livelli
+  return '../'.repeat(depth);
+}
+
 function createFooter(currentPage) {
+  const base = getAssetBasePath();
   const footerHTML = `
 <footer class="footer bg-secondary text-dark py-14 mt-16">
   <div class="footer-container px-4 flex flex-col md:flex-row justify-between items-start gap-10 border-b border-light-gray pb-10" style="width:100%;">
@@ -7,51 +21,51 @@ function createFooter(currentPage) {
     <div class="footer-section flex flex-col gap-3 min-w-[180px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Contatti</span>
       <span class="text-xs flex items-center">
-        <img src="/assets/images/icons/info.png" alt="Info" width="22" height="22" style="margin-right:8px;" /> Negozio
+        <img src="${base}assets/images/icons/info.png" alt="Info" width="22" height="22" style="margin-right:8px;" /> Negozio
       </span>
       <span class="text-xs flex items-center">
-        <img src="/assets/images/icons/timetable.png" alt="Orari" width="22" height="22" style="margin-right:8px;" /> Orari
+        <img src="${base}assets/images/icons/timetable.png" alt="Orari" width="22" height="22" style="margin-right:8px;" /> Orari
       </span>
       <span class="text-xs flex items-center">
-        <img src="/assets/images/icons/mail.png" alt="Email" width="22" height="22" style="margin-right:8px;" /> Email
+        <img src="${base}assets/images/icons/mail.png" alt="Email" width="22" height="22" style="margin-right:8px;" /> Email
       </span>
       <span class="text-xs flex items-center">
-        <img src="/assets/images/social/whatsapp.png" alt="Whatsapp" width="22" height="22" style="margin-right:8px;" /> Whatsapp
+        <img src="${base}assets/images/social/whatsapp.png" alt="Whatsapp" width="22" height="22" style="margin-right:8px;" /> Whatsapp
       </span>
       <span class="text-xs flex items-center">
-        <img src="/assets/images/icons/paint-brush.png" alt="Creatività" width="22" height="22" style="margin-right:8px;" /> Creatività
+        <img src="${base}assets/images/icons/paint-brush.png" alt="Creatività" width="22" height="22" style="margin-right:8px;" /> Creatività
       </span>
     </div>
     <!-- Navigazione cartoon -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Navigazione</span>
-      <a href="/Dudu-stationery/index.html" class="hover:text-accent flex items-center">
-        <img src="/assets/images/icons/home.png" alt="Home" width="22" height="22" style="margin-right:8px;" /> Home
+      <a href="${base}index.html" class="hover:text-accent flex items-center">
+        <img src="${base}assets/images/icons/home.png" alt="Home" width="22" height="22" style="margin-right:8px;" /> Home
       </a>
-      <a href="/Dudu-stationery/html/chi-siamo.html" class="hover:text-accent flex items-center">
-        <img src="/assets/images/icons/star.png" alt="Chi Siamo" width="22" height="22" style="margin-right:8px;" /> Chi Siamo
+      <a href="${base}html/chi-siamo.html" class="hover:text-accent flex items-center">
+        <img src="${base}assets/images/icons/star.png" alt="Chi Siamo" width="22" height="22" style="margin-right:8px;" /> Chi Siamo
       </a>
-      <a href="/Dudu-stationery/html/novita.html" class="hover:text-accent flex items-center">
-        <img src="/assets/images/icons/megaphone.png" alt="Novità" width="22" height="22" style="margin-right:8px;" /> Novità
+      <a href="${base}html/novita.html" class="hover:text-accent flex items-center">
+        <img src="${base}assets/images/icons/megaphone.png" alt="Novità" width="22" height="22" style="margin-right:8px;" /> Novità
       </a>
-      <a href="/Dudu-stationery/html/servizi.html" class="hover:text-accent flex items-center">
-        <img src="/assets/images/icons/customer-review.png" alt="Servizi" width="22" height="22" style="margin-right:8px;" /> Servizi
+      <a href="${base}html/servizi.html" class="hover:text-accent flex items-center">
+        <img src="${base}assets/images/icons/customer-review.png" alt="Servizi" width="22" height="22" style="margin-right:8px;" /> Servizi
       </a>
-      <a href="/Dudu-stationery/html/contatti.html" class="hover:text-accent flex items-center">
-        <img src="/assets/images/icons/mail.png" alt="Contatti" width="22" height="22" style="margin-right:8px;" /> Contatti
+      <a href="${base}html/contatti.html" class="hover:text-accent flex items-center">
+        <img src="${base}assets/images/icons/mail.png" alt="Contatti" width="22" height="22" style="margin-right:8px;" /> Contatti
       </a>
     </div>
     <!-- Legali cartoon -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Legali</span>
-      <a href="/Dudu-stationery/html/termini-servizio.html" class="hover:text-accent flex items-center">
-        <img src="/assets/images/legal-pages/terms.png" alt="Termini di Servizio" width="22" height="22" style="margin-right:8px;" /> Termini di Servizio
+      <a href="${base}html/termini-servizio.html" class="hover:text-accent flex items-center">
+        <img src="${base}assets/images/legal-pages/terms.png" alt="Termini di Servizio" width="22" height="22" style="margin-right:8px;" /> Termini di Servizio
       </a>
-      <a href="/Dudu-stationery/html/privacy-policy.html" class="hover:text-accent flex items-center">
-        <img src="/assets/images/legal-pages/privacy.png" alt="Privacy Policy" width="22" height="22" style="margin-right:8px;" /> Privacy Policy
+      <a href="${base}html/privacy-policy.html" class="hover:text-accent flex items-center">
+        <img src="${base}assets/images/legal-pages/privacy.png" alt="Privacy Policy" width="22" height="22" style="margin-right:8px;" /> Privacy Policy
       </a>
-      <a href="/Dudu-stationery/html/cookie-policy.html" class="hover:text-accent flex items-center">
-        <img src="/assets/images/legal-pages/cookie.png" alt="Cookie Policy" width="22" height="22" style="margin-right:8px;" /> Cookie Policy
+      <a href="${base}html/cookie-policy.html" class="hover:text-accent flex items-center">
+        <img src="${base}assets/images/legal-pages/cookie.png" alt="Cookie Policy" width="22" height="22" style="margin-right:8px;" /> Cookie Policy
       </a>
     </div>
     <!-- Social ufficiali -->
@@ -59,13 +73,13 @@ function createFooter(currentPage) {
       <span class="footer-title text-eco text-lg font-bold mb-2">Seguici</span>
       <div class="flex gap-4 mt-2">
         <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent">
-          <img src="/assets/images/social/facebook.png" alt="Facebook" width="24" height="24" />
+          <img src="${base}assets/images/social/facebook.png" alt="Facebook" width="24" height="24" />
         </a>
         <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent">
-          <img src="/assets/images/social/instagram.png" alt="Instagram" width="24" height="24" />
+          <img src="${base}assets/images/social/instagram.png" alt="Instagram" width="24" height="24" />
         </a>
         <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent">
-          <img src="/assets/images/social/whatsapp.png" alt="Whatsapp" width="24" height="24" />
+          <img src="${base}assets/images/social/whatsapp.png" alt="Whatsapp" width="24" height="24" />
         </a>
       </div>
     </div>
@@ -74,16 +88,16 @@ function createFooter(currentPage) {
       <span class="footer-title text-eco text-lg font-bold mb-2">Sviluppatore</span>
       <div class="flex flex-col gap-2 mt-2">
         <a href="https://github.com/Dwebcoding" target="_blank" class="flex items-center text-eco hover:text-accent" aria-label="GitHub">
-          <img src="/assets/images/svg/github-svgrepo-com.svg" alt="GitHub" width="28" height="28" style="margin-right:8px;" /> GitHub
+          <img src="${base}assets/images/svg/github-svgrepo-com.svg" alt="GitHub" width="28" height="28" style="margin-right:8px;" /> GitHub
         </a>
         <a href="https://dwebcoding.github.io/Portfolio/" target="_blank" class="flex items-center text-eco hover:text-accent" aria-label="Portfolio">
-          <img src="/assets/images/svg/portfolio-svgrepo-com.svg" alt="Portfolio" width="28" height="28" style="margin-right:8px;" /> Portfolio
+          <img src="${base}assets/images/svg/portfolio-svgrepo-com.svg" alt="Portfolio" width="28" height="28" style="margin-right:8px;" /> Portfolio
         </a>
         <a href="mailto:d.webcoding@gmail.com" target="_blank" class="flex items-center text-eco hover:text-accent" aria-label="Email">
-          <img src="/assets/images/svg/gmail-svgrepo-com.svg" alt="Email" width="28" height="28" style="margin-right:8px;" /> Email
+          <img src="${base}assets/images/svg/gmail-svgrepo-com.svg" alt="Email" width="28" height="28" style="margin-right:8px;" /> Email
         </a>
         <a href="https://wa.me/393882566019" target="_blank" class="flex items-center text-eco hover:text-accent" aria-label="WhatsApp">
-          <img src="/assets/images/svg/whatsapp-svgrepo-com.svg" alt="WhatsApp" width="28" height="28" style="margin-right:8px;" /> WhatsApp
+          <img src="${base}assets/images/svg/whatsapp-svgrepo-com.svg" alt="WhatsApp" width="28" height="28" style="margin-right:8px;" /> WhatsApp
         </a>
       </div>
     </div>
