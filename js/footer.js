@@ -9,9 +9,9 @@ function createFooter(currentPage) {
       <span class="text-xs flex items-center">
         <img src="./assets/images/icons/info.png" alt="Info" width="22" height="22" style="margin-right:8px;" /> Negozio
       </span>
-      <span class="text-xs flex items-center">
-        <img src="./assets/images/icons/timetable.png" alt="Orari" width="22" height="22" style="margin-right:8px;" /> Orari
-      </span>
+        <span class="text-xs flex items-center">
+          <img src="/Dudu-stationery/assets/images/icons/timetable.png" alt="Orari" width="22" height="22" style="margin-right:8px;" /> Orari
+        </span>
       <span class="text-xs flex items-center">
         <img src="./assets/images/icons/mail.png" alt="Email" width="22" height="22" style="margin-right:8px;" /> Email
       </span>
