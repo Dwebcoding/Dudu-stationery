@@ -1,17 +1,15 @@
 // Footer component
 
 function getAssetBasePath() {
-  // Rende il path compatibile sia in locale che su GitHub Pages
-  // Esempio: su GitHub Pages window.location.pathname = /Dudu-stationery/html/chi-siamo.html
-  // In locale: /html/chi-siamo.html oppure /index.html
-  var path = window.location.pathname;
-  // Trova la sottocartella del repo (es: /Dudu-stationery/)
-  var match = path.match(/^\/(.+?)\//);
-  var repoBase = '';
-  if (match && match[1] !== 'html' && match[1] !== 'assets' && match[1] !== 'css' && match[1] !== 'js') {
-    repoBase = '/' + match[1] + '/';
+  // Hardcoded repo name for GitHub Pages and local use
+  // Change this if you rename the repo!
+  var repoName = 'Dudu-stationery';
+  var isGithubPages = window.location.hostname.endsWith('github.io');
+  if (isGithubPages) {
+    return '/' + repoName + '/';
+  } else {
+    return '/';
   }
-  return repoBase;
 }
 
 function createFooter(currentPage) {
