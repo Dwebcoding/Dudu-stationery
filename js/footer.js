@@ -7,131 +7,67 @@ function createFooter(currentPage) {
     <div class="footer-section flex flex-col gap-3 min-w-[180px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Contatti</span>
       <span class="text-xs flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <path d="M7 4V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h4l-1 16H4L3 4h4z" fill="#F9C784" opacity="0.9"/>
-          <path d="M9 8v2M15 8v2" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"/>
-          <rect x="8" y="2" width="8" height="2" fill="#6C63FF"/>
-        </svg> Negozio
+        <img src="${currentPage === 'index' ? 'assets/images/icons/info.png' : '../assets/images/icons/info.png'}" alt="Info" width="22" height="22" style="margin-right:8px;" /> Negozio
       </span>
       <span class="text-xs flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <rect x="4" y="6" width="16" height="14" rx="2" fill="#E07A5F" opacity="0.8"/>
-          <rect x="4" y="4" width="16" height="4" rx="2" fill="#F9C784" opacity="0.9"/>
-          <rect x="7" y="2" width="2" height="4" rx="1" fill="#6C63FF"/>
-          <rect x="15" y="2" width="2" height="4" rx="1" fill="#6C63FF"/>
-          <path d="M8 10h2M8 13h2M8 16h2M12 10h2M12 13h2M16 10h2M16 13h2" stroke="#3B7C59" stroke-width="1"/>
-        </svg> Orari
+        <img src="${currentPage === 'index' ? 'assets/images/icons/timetable.png' : '../assets/images/icons/timetable.png'}" alt="Orari" width="22" height="22" style="margin-right:8px;" /> Orari
       </span>
       <span class="text-xs flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <rect x="2" y="6" width="20" height="12" rx="2" fill="#6C63FF" opacity="0.8"/>
-          <path d="M2 8l10 6 10-6" stroke="#E07A5F" stroke-width="2" fill="none"/>
-          <path d="M2 6l10 6 10-6" fill="#F9C784"/>
-        </svg> Email
+        <img src="${currentPage === 'index' ? 'assets/images/icons/mail.png' : '../assets/images/icons/mail.png'}" alt="Email" width="22" height="22" style="margin-right:8px;" /> Email
       </span>
       <span class="text-xs flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <circle cx="12" cy="12" r="10" fill="#25D366"/>
-          <path d="M16.5 13.5c-.3-.2-1.8-.9-2-.9-.2-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3-.1-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4-.1-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5 0 1.5 1.1 2.9 1.2 3.1.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z" fill="#fff"/>
-        </svg> Whatsapp
+        <img src="${currentPage === 'index' ? 'assets/images/social/whatsapp.png' : '../assets/images/social/whatsapp.png'}" alt="Whatsapp" width="22" height="22" style="margin-right:8px;" /> Whatsapp
       </span>
       <span class="text-xs flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <path d="M6 2l12 12-2 2L4 4z" fill="#E07A5F" opacity="0.7"/>
-          <path d="M8 2l12 12-2 2L6 4z" fill="#F9C784" opacity="0.8"/>
-          <path d="M10 2l12 12-2 2L8 4z" fill="#6C63FF" opacity="0.9"/>
-          <circle cx="5" cy="3" r="1" fill="#3B7C59"/>
-          <circle cx="7" cy="3" r="1" fill="#3B7C59"/>
-          <circle cx="9" cy="3" r="1" fill="#3B7C59"/>
-          <path d="M16 16l4 4-1 1-4-4z" fill="#E07A5F" opacity="0.6"/>
-        </svg> Creatività
+        <img src="${currentPage === 'index' ? 'assets/images/icons/paint-brush.png' : '../assets/images/icons/paint-brush.png'}" alt="Creatività" width="22" height="22" style="margin-right:8px;" /> Creatività
       </span>
     </div>
     <!-- Navigazione cartoon -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Navigazione</span>
       <a href="../index.html" class="hover:text-accent flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" fill="#F9C784"/>
-        </svg> Home
+        <img src="${currentPage === 'index' ? 'assets/images/icons/home.png' : '../assets/images/icons/home.png'}" alt="Home" width="22" height="22" style="margin-right:8px;" /> Home
       </a>
       <a href="chi-siamo.html" class="hover:text-accent flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <circle cx="12" cy="12" r="10" fill="#E07A5F"/>
-          <circle cx="12" cy="12" r="6" fill="#fff"/>
-        </svg> Chi Siamo
+        <img src="${currentPage === 'index' ? 'assets/images/icons/star.png' : '../assets/images/icons/star.png'}" alt="Chi Siamo" width="22" height="22" style="margin-right:8px;" /> Chi Siamo
       </a>
       <a href="novita.html" class="hover:text-accent flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <rect x="4" y="8" width="16" height="8" rx="2" fill="#6C63FF"/>
-          <rect x="4" y="4" width="16" height="4" rx="2" fill="#F9C784"/>
-        </svg> Novità
+        <img src="${currentPage === 'index' ? 'assets/images/icons/megaphone.png' : '../assets/images/icons/megaphone.png'}" alt="Novità" width="22" height="22" style="margin-right:8px;" /> Novità
       </a>
       <a href="servizi.html" class="hover:text-accent flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <rect x="6" y="6" width="12" height="12" rx="3" fill="#3B7C59"/>
-          <path d="M12 10v4" stroke="#fff" stroke-width="2"/>
-        </svg> Servizi
+        <img src="${currentPage === 'index' ? 'assets/images/icons/customer-review.png' : '../assets/images/icons/customer-review.png'}" alt="Servizi" width="22" height="22" style="margin-right:8px;" /> Servizi
       </a>
       <a href="contatti.html" class="hover:text-accent flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <rect x="4" y="4" width="16" height="16" rx="4" fill="#E07A5F"/>
-          <circle cx="12" cy="12" r="6" fill="#fff"/>
-        </svg> Contatti
+        <img src="${currentPage === 'index' ? 'assets/images/icons/mail.png' : '../assets/images/icons/mail.png'}" alt="Contatti" width="22" height="22" style="margin-right:8px;" /> Contatti
       </a>
     </div>
     <!-- Legali cartoon -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Legali</span>
       <a href="../termini-servizio.html" class="hover:text-accent flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <rect x="4" y="4" width="16" height="16" rx="4" fill="#3B7C59"/>
-          <rect x="8" y="8" width="8" height="8" rx="2" fill="#fff"/>
-        </svg> Termini e condizioni
+        <img src="${currentPage === 'index' ? 'assets/images/legal pages/terms.png' : '../assets/images/legal pages/terms.png'}" alt="Termini di Servizio" width="22" height="22" style="margin-right:8px;" /> Termini di Servizio
       </a>
       <a href="../privacy-policy.html" class="hover:text-accent flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <circle cx="12" cy="12" r="10" fill="#E07A5F"/>
-          <circle cx="12" cy="12" r="6" fill="#fff"/>
-        </svg> Privacy Policy
+        <img src="${currentPage === 'index' ? 'assets/images/legal pages/privacy.png' : '../assets/images/legal pages/privacy.png'}" alt="Privacy Policy" width="22" height="22" style="margin-right:8px;" /> Privacy Policy
       </a>
       <a href="../cookie-policy.html" class="hover:text-accent flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:22px;width:22px;margin-right:8px;">
-          <rect x="4" y="4" width="16" height="16" rx="4" fill="#F9C784"/>
-          <circle cx="12" cy="12" r="6" fill="#fff"/>
-        </svg> Cookie Policy
+        <img src="${currentPage === 'index' ? 'assets/images/legal pages/cookie.png' : '../assets/images/legal pages/cookie.png'}" alt="Cookie Policy" width="22" height="22" style="margin-right:8px;" /> Cookie Policy
       </a>
     </div>
     <!-- Social ufficiali -->
     <div class="footer-section flex flex-col gap-2 min-w-[140px]">
       <span class="footer-title text-eco text-lg font-bold mb-2">Seguici</span>
       <div class="flex gap-4 mt-2">
-        <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="height:22px;width:22px;">
-            <rect width="48" height="48" rx="12" fill="#1877F2"/>
-            <path d="M32 24h-4v12h-6V24h-3v-5h3v-3c0-2.2 1.3-5 5-5h4v5h-2c-.6 0-1 .4-1 1v2h3l-1 5z" fill="#fff"/>
-          </svg>
+          <a href="https://www.facebook.com/cartoleria.dudu/" target="_blank" class="text-eco hover:text-accent">
+            <img src="${currentPage === 'index' ? 'assets/images/social/facebook.png' : '../assets/images/social/facebook.png'}" alt="Facebook" width="24" height="24" />
+          </a>
+          <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent">
+            <img src="${currentPage === 'index' ? 'assets/images/social/instagram.png' : '../assets/images/social/instagram.png'}" alt="Instagram" width="24" height="24" />
+          </a>
+          <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent">
+            <img src="${currentPage === 'index' ? 'assets/images/social/whatsapp.png' : '../assets/images/social/whatsapp.png'}" alt="Whatsapp" width="24" height="24" />
+          </a>
         </a>
-        <a href="https://www.instagram.com/cartoleriadudu/" target="_blank" class="text-eco hover:text-accent">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="height:22px;width:22px;">
-            <defs>
-              <linearGradient id="insta-gradient" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#f9c784"/>
-                <stop offset="50%" stop-color="#dd2a7b"/>
-                <stop offset="100%" stop-color="#6c63ff"/>
-              </linearGradient>
-            </defs>
-            <rect width="48" height="48" rx="12" fill="url(#insta-gradient)"/>
-            <circle cx="24" cy="24" r="10" fill="#fff"/>
-            <circle cx="34" cy="14" r="3" fill="#dd2a7b"/>
-          </svg>
-        </a>
-        <a href="https://wa.me/393317393337" target="_blank" class="text-eco hover:text-accent">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="height:22px;width:22px;">
-            <rect width="48" height="48" rx="12" fill="#25D366"/>
-            <path d="M34 18c-1.1-2.1-3.2-3.5-5.6-3.5-2.4 0-4.5 1.4-5.6 3.5-1.1 2.1-1.1 4.7 0 6.8l1.2 2.2c.2.4.7.5 1.1.3l2.2-1.2c2.1 1.1 4.7 1.1 6.8 0 2.1-1.1 3.5-3.2 3.5-5.6 0-2.4-1.4-4.5-3.5-5.6z" fill="#fff"/>
-            <circle cx="24" cy="24" r="6" fill="#fff" opacity="0.2"/>
-          </svg>
         </a>
       </div>
     </div>
