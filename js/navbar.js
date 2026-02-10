@@ -9,7 +9,12 @@ function createNavbar(currentPage) {
             <img src="assets/images/logo/logo dudu.png" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
             Dudù
         </a>
-        <ul class="nav-menu flex gap-8 mx-auto">
+        <button class="hamburger block md:hidden focus:outline-none" id="navbar-hamburger" aria-label="Apri menu">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <ul class="nav-menu flex gap-8 mx-auto md:flex hidden flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent z-50" id="navbar-menu">
             <li class="nav-item active"><a href="index.html" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a></li>
             <li class="nav-item"><a href="html/chi-siamo.html" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Chi Siamo</a></li>
             <li class="nav-item"><a href="html/novita.html" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Novità</a></li>
@@ -38,7 +43,12 @@ function createNavbar(currentPage) {
             <img src="../assets/images/logo/logo dudu.png" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
             Dudù
         </a>
-        <ul class="nav-menu flex gap-8 mx-auto">
+        <button class="hamburger block md:hidden focus:outline-none" id="navbar-hamburger" aria-label="Apri menu">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <ul class="nav-menu flex gap-8 mx-auto md:flex hidden flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent z-50" id="navbar-menu">
             <li class="nav-item"><a href="../index.html" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a></li>
             <li class="nav-item"><a href="chi-siamo.html" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Chi Siamo</a></li>
             <li class="nav-item"><a href="novita.html" class="text-eco hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Novità</a></li>
@@ -75,5 +85,14 @@ function insertNavbar(currentPage) {
         const navbarContainer = document.createElement('div');
         navbarContainer.innerHTML = navbarHTML;
         document.body.insertBefore(navbarContainer.firstElementChild, document.body.firstElementChild);
+    }
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('navbar-hamburger');
+    const menu = document.getElementById('navbar-menu');
+    if (hamburger && menu) {
+        hamburger.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+        });
     }
 }
