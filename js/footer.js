@@ -1,15 +1,11 @@
 // Footer component
 
 function getAssetBasePath() {
-  // Calcola il path base per le immagini in base alla posizione della pagina
-  // Esempio: se la pagina è /html/chi-siamo.html => basePath = '../'
-  // se la pagina è /index.html => basePath = './'
-  var path = window.location.pathname;
-  var depth = path.split('/').filter(Boolean).length - 1; // -1 perché la prima è la root
-  // Se siamo nella root (index.html), nessun ../
-  if (depth <= 0) return './';
-  // Se siamo in una sottocartella, aggiungi tanti ../ quanti sono i livelli
-  return '../'.repeat(depth);
+  // Gestione compatibile con GitHub Pages (sottocartella)
+  // Ottieni la base del repository (es: /Dudu-stationery/)
+  var repoBase = '/Dudu-stationery/';
+  // Se la pagina è già in /Dudu-stationery o sottocartelle, usa sempre il prefisso assoluto
+  return repoBase;
 }
 
 function createFooter(currentPage) {
