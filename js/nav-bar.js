@@ -3,15 +3,15 @@ function createNavbar(currentPage) {
     const navbarHTML = `
 <nav class="navbar">
     <div class="navbar-container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo/logo dudu.png" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
+            Dudù
+        </a>
         <button class="hamburger" id="navbar-hamburger" aria-label="Apri menu">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
         </button>
-        <a href="index.html" class="logo">
-            <img src="assets/images/logo/logo dudu.png" alt="Logo Cartoleria Dudù" style="height: 40px; width: auto; display: block;" />
-            Dudù
-        </a>
         <ul class="nav-menu" id="navbar-menu">
             <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item"><a href="html/chi-siamo.html">Chi Siamo</a></li>
